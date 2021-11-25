@@ -45,5 +45,5 @@ RUN set -eux; yum install -y epel-release; \
 WORKDIR ${PIKA}
 COPY --from=builder $PIKA ./
 
-ENTRYPOINT ["/pika/entrypoint.sh"]
+# ENTRYPOINT ["/pika/entrypoint.sh"]
 CMD ["/pika/bin/pika", "-c", "/pika/conf/pika.conf"]
