@@ -22,6 +22,7 @@ RUN rpm -ivh https://mirrors.aliyun.com/epel/epel-release-latest-7.noarch.rpm &&
     yum -y install lz4-devel && \
     yum -y install libzstd-devel && \
     yum -y install gcc-c++ && \
+    yum -y install libstdc++-static && \
     yum -y install make && \
     yum -y install which && \
     yum -y install git && \
